@@ -34,3 +34,6 @@ See Michael Nygard's article, linked above.
 
 # Implementation
 In order to implment it on our repo we will use [ADR Gen](https://github.com/asiermarques/adrgen), a tool that allows us to write yaml config file. 
+
+# Architectural Decision History
+Using the tool mentioned at the previous section, we can keep a history of our records.
