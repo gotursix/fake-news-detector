@@ -15,7 +15,7 @@ namespace Frontend.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult CheckLink()
         {
             ViewBag.Message = "Your application about page.";
             return View();
