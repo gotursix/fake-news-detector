@@ -20,5 +20,11 @@ namespace Frontend.Controllers
             ViewBag.Message = "Your application about page.";
             return View();
         }
+
+        public ActionResult AfterCheckLink()
+        {
+            ViewBag.Message = "Your application about page.";
+            return View();
+        }
     }
 }
