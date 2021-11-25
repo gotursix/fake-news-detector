@@ -24,9 +24,6 @@ const Navbar = () => {
                     <NavLink to="/History" activeStyle>
                         History
                     </NavLink>
-                    <NavLink to="/About" activeStyle>
-                        About
-                    </NavLink>
                 </NavMenu> 
            </Nav> 
         </>
