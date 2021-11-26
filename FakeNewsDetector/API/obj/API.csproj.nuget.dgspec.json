@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bujor\\source\\repos\\fake-news-detector\\FakeNewsDetector\\API\\API.csproj": {}
+    "D:\\Facultate\\.NET\\fake-news-detector\\FakeNewsDetector\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bujor\\source\\repos\\fake-news-detector\\FakeNewsDetector\\API\\API.csproj": {
+    "D:\\Facultate\\.NET\\fake-news-detector\\FakeNewsDetector\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bujor\\source\\repos\\fake-news-detector\\FakeNewsDetector\\API\\API.csproj",
+        "projectUniqueName": "D:\\Facultate\\.NET\\fake-news-detector\\FakeNewsDetector\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\bujor\\source\\repos\\fake-news-detector\\FakeNewsDetector\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\bujor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bujor\\source\\repos\\fake-news-detector\\FakeNewsDetector\\API\\obj\\",
+        "projectPath": "D:\\Facultate\\.NET\\fake-news-detector\\FakeNewsDetector\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "D:\\Facultate\\.NET\\fake-news-detector\\FakeNewsDetector\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bujor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.Authentication.Certificate": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -59,12 +63,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -73,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

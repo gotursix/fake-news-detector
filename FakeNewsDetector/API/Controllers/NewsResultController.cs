@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -14,11 +15,12 @@ namespace API.Controllers
         {
             _logger = logger;
         }
-
-        [HttpGet]
-        public NewsResult Get()
+        
+        [EnableCors]
+        [HttpPost]
+        public NewsResult Post(URL url)
         {
-            var result = new NewsResult(Guid.NewGuid(), "google.com", Guid.NewGuid());
+            var result = new NewsResult(Guid.NewGuid(), url, Guid.NewGuid(), "Real", DateTime.Now);
             return result;
         }
     }

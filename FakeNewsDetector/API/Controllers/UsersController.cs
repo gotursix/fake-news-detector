@@ -15,9 +15,9 @@ namespace API.Controllers
         public UsersController(ILogger<User> logger)
         {
             _logger = logger;
-            _usersList.Add(new User(Guid.NewGuid(), "username1"));
-            _usersList.Add(new User(Guid.NewGuid(), "username2"));
-            _usersList.Add(new User(Guid.NewGuid(), "username3"));
+            _usersList.Add(new User(Guid.NewGuid(), "username1", new URL("www.google.com")));
+            _usersList.Add(new User(Guid.NewGuid(), "username2", new URL("www.youtube.com")));
+            _usersList.Add(new User(Guid.NewGuid(), "username3", new URL("www.facebook.com")));
         }
         
         [HttpGet]
@@ -27,10 +27,10 @@ namespace API.Controllers
         }
         
         [HttpPost]
-        public bool Post(string username)
+        public ActionResult Post(URL url)
         {
-            _usersList.Add(new User(Guid.NewGuid(), username));
-            return true;
+            _usersList.Add(new User(Guid.NewGuid(), "lol", url));
+            return Ok();
         }
     }
 }

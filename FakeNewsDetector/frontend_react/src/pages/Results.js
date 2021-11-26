@@ -1,9 +1,22 @@
 import React from 'react'
 
-const Results = () => {
+const Results = (props) => {
     return (
-        <div>
-            <p>Results page</p>
+        <div className="center Results">
+            <table className="table">
+                    <thead className="thead-dark">
+                        <tr>
+                            <th scope="col">Link</th>
+                            <th scope="col">Decision</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{props.formResultUrl}</td>
+                            <td>{props.formResultDecision}</td>
+                        </tr>
+                    </tbody>
+                </table>
         </div>
     )
 }

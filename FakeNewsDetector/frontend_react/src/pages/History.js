@@ -47,7 +47,7 @@ const History = () => {
                         {
                             History.map((item, i) => {
                                 return <tr>
-                                            <td>{item.link}</td>
+                                            <td>{item.link.url}</td>
                                             <td>{item.decision}</td>
                                             <td>{new Date(item.searchDate).toLocaleDateString("en-US")}</td>
                                     </tr>

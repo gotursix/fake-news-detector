@@ -1,4 +1,5 @@
 ﻿using System;
+using API.Controllers;
 
 namespace API
 {
@@ -7,10 +8,11 @@ namespace API
         public Guid Id { get; set; }
         public string Username { get; set; }
 
-        public User(Guid id, string username)
+        public User(Guid id, string username, URL url)
         {
             Id = id;
             Username = username;
+            Console.WriteLine(url.url);
         }
     }
 }

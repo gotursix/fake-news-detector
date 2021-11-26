@@ -1,30 +1,41 @@
 import React, { useEffect, useState } from "react";
+import Results from "./Results";
+import ChecklinkForm from "./ChecklinkForm";
 
 const Checklink = () => {
-    const [Link, setLink] = useState('');
+    const [ResultsDB, setResultsDB] = useState([])
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data = new FormData(e.target);
-        fetch('https://localhost:5003/CheckLink', {
+        fetch('https://localhost:5003/NewsResult', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: data,
-          });
-        console.log(data);
+            body: `{
+                "url" : "${e.target[0].value}"
+            }`,
+          })
+          .then(response => response.json())
+          .then(data => {
+              console.log(data)
+              setResultsDB(data)
+          })
+          .catch(error => console.log(error));
     }
 
-    return (
-        <div className="container">
-            <form className="center divForm" onSubmit={handleSubmit}>
-                <div className="form-floating center mb-3">
-                    <input type="Link" className="form-control" id="floatingInput" placeholder="Type a link" onChange={e => setLink(e.target.value)}/>
-                    <label htmlFor="InputLink">Link</label>
-                </div>
-                <button type="submit" className="btn btn-primary">Check</button>
-            </form>
-        </div>
-    )
+    if (ResultsDB.length == 0)
+    {
+        return (
+            <div>
+                <ChecklinkForm onSubmitForm={handleSubmit}/>
+            </div>
+        )
+    }
+    else
+        return (
+            <div>
+                <Results formResultUrl={ResultsDB['link']['url']} formResultDecision={ResultsDB['decision']}/>
+            </div>
+        )
 }
 
 export default Checklink

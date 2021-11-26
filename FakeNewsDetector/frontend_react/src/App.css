@@ -48,3 +48,50 @@
   flex-direction: column;
   width: 100%;
 }
+
+.Results{
+  padding: 300px;
+}
+
+.index{
+  font-family: var(--default-font), var(--fallback-font);
+  --default-font: 'Poppins';
+    --fallback-font: sans-serif;
+  padding: 20px;
+}
+
+.footer{
+  --default-height: 150px;
+  position: absolute;
+  top: calc(100% - var(--default-height));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: #77A6F7;
+  height: var(--default-height);
+  color: white;
+}
+.linkedin, .github{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.linkedin div, .github div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer a:link, .footer a:visited{
+  text-decoration: none;
+  color: white;
+}
+.footer a{
+  padding: 5px;
+  font-size: large;
+}
+.footer img{
+  height: 80%;
+}
