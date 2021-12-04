@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using EntityFramework;
+using EntityFramework.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -12,6 +14,7 @@ namespace API.Controllers
     public class ResultsHistoryController : ControllerBase
     {
         private readonly List<NewsResult> _newsResultHistory = new();
+        private readonly List<Post> _postResultHistory = new();
         private readonly List<URL> _sitesList = new();
         private readonly ILogger<NewsResult> _logger;
         private Random gen = new Random();
@@ -35,14 +38,24 @@ namespace API.Controllers
         
         [EnableCors]
         [HttpGet]
-        public IEnumerable<NewsResult> Get()
+        public IEnumerable<Post> Get()
         {
-            foreach (var result in _sitesList.Select(site => new NewsResult(Guid.NewGuid(), site, Guid.NewGuid(), "Real", RandomDay())))
+            /*foreach (var result in _sitesList.Select(site => new NewsResult(Guid.NewGuid(), site, Guid.NewGuid(), "Real", RandomDay())))
             {
                 _newsResultHistory.Add(result);
+            }*/
+            
+            using (var ctx = new BlogDbContext())
+            {
+                var query = from p in ctx.Posts
+                    orderby p.Id
+                    select p;
+                foreach (var p in query)
+                {
+                    _postResultHistory.Add(p);
+                }
             }
-
-            return _newsResultHistory;
+            return _postResultHistory;
         }
     }
 }

@@ -13,19 +13,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Faculty3\\net\\Test\\Test\\Test.csproj",
+      "projectUniqueName": "E:\\Faculty3\\.NET\\fake-news-detector\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "E:\\Faculty3\\net\\Test\\Test\\Test.csproj",
+      "projectPath": "E:\\Faculty3\\.NET\\fake-news-detector\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
-      "outputPath": "E:\\Faculty3\\net\\Test\\Test\\obj\\",
+      "outputPath": "E:\\Faculty3\\.NET\\fake-news-detector\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Valentin\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

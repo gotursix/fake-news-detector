@@ -1,9 +1,0 @@
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\bin\Debug\UnitTests.dll
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\bin\Debug\UnitTests.pdb
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\bin\Debug\nunit.framework.dll
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\bin\Debug\nunit.framework.xml
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\obj\Debug\UnitTests.csprojAssemblyReference.cache
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\obj\Debug\UnitTests.csproj.CoreCompileInputs.cache
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\obj\Debug\UnitTests.csproj.CopyComplete
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\obj\Debug\UnitTests.dll
-D:\Facultate\.NET\fake-news-detector\FakeNewsDetector\UnitTests\obj\Debug\UnitTests.pdb
