@@ -1,7 +1,7 @@
 ﻿using System;
 using API.Controllers;
 
-namespace API
+namespace EntityFramework.Models
 {
     public class NewsResult
     {

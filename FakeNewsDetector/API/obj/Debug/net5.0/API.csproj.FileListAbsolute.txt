@@ -73,7 +73,6 @@ E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\CodeFi
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\CodeFirstEF.runtimeconfig.json
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\CodeFirstEF.runtimeconfig.dev.json
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\CodeFirstEF.exe
-E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\API.StaticWebAssets.xml
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\EntityFramework.SqlServer.dll
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\EntityFramework.dll
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\System.CodeDom.dll
@@ -89,3 +88,7 @@ E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\runtim
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\CodeFirstEF.dll
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\CodeFirstEF.pdb
 E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\CodeFirstEF.dll.config
+E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Faculty3\.NET\fake-news-detector\FakeNewsDetector\API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll

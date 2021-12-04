@@ -5,9 +5,9 @@ namespace EntityFramework
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            using (var ctx = new BlogDbContext())
+            using (var ctx = new AppDbContext())
             {
                 var post = new Post() { Id = 69, Title = "leeeeeeeeeeeroy"};
 
@@ -15,6 +15,7 @@ namespace EntityFramework
                 ctx.SaveChanges();
             }
             Console.WriteLine("Demo completed.");
-            Console.ReadLine();        }
+            Console.ReadLine();        
+        }
     }
 }

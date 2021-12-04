@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using EntityFramework;
+using EntityFramework.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -15,21 +18,30 @@ namespace API.Controllers
         public UsersController(ILogger<User> logger)
         {
             _logger = logger;
-            _usersList.Add(new User(Guid.NewGuid(), "username1", new URL("www.google.com")));
-            _usersList.Add(new User(Guid.NewGuid(), "username2", new URL("www.youtube.com")));
-            _usersList.Add(new User(Guid.NewGuid(), "username3", new URL("www.facebook.com")));
         }
         
         [HttpGet]
         public IEnumerable<User> Get()
         {
+            using (var ctx = new AppDbContext())
+            {
+                var query = from u in ctx.Users
+                    orderby u.Username
+                    select u;
+                foreach (var u in query)
+                {
+                    _usersList.Add(u);
+                }
+            }
             return _usersList;
         }
         
         [HttpPost]
         public ActionResult Post(URL url)
         {
-            _usersList.Add(new User(Guid.NewGuid(), "lol", url));
+            // TODO: Finish function
+            //_usersList.Add(new User(Guid.NewGuid(), "lol", url));
+            //_usersList.Add(new User(Guid.NewGuid(), "lol"));
             return Ok();
         }
     }

@@ -1,3 +1,4 @@
+using EntityFramework;
 using Microsoft.AspNetCore.Authentication.Certificate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -58,7 +59,7 @@ namespace API
             app.UseCors();
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers().RequireCors("localhostCORS");; });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers().RequireCors("localhostCORS"); });
         }
     }
 }
