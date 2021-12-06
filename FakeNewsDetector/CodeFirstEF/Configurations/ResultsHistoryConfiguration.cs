@@ -3,11 +3,11 @@ using EntityFramework.Models;
 
 namespace EntityFramework.Configurations
 {
-    public class UsersConfigurations : EntityTypeConfiguration<User>
+    public class ResultsHistoryConfiguration : EntityTypeConfiguration<NewsResult>
     {
-        public UsersConfigurations()
+        public ResultsHistoryConfiguration()
         {
-            this.Property(u => u.Username)
+            this.Property(p => p.Decision)
                 .IsRequired()
                 .HasMaxLength(50);
         }

@@ -1,5 +1,4 @@
 ﻿using System;
-using API.Controllers;
 
 namespace EntityFramework.Models
 {
@@ -7,12 +6,5 @@ namespace EntityFramework.Models
     {
         public Guid Id { get; set; }
         public string Username { get; set; }
-
-        /*public User(Guid id, string username, URL url)
-        {
-            Id = id;
-            Username = username;
-            Console.WriteLine(url.url);
-        }*/
     }
 }

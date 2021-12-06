@@ -4953,19 +4953,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\Valentin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cursuri3\\.Net\\fake-news-detector\\FakeNewsDetector\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "E:\\Faculty3\\.NET\\fake-news-detector\\FakeNewsDetector\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "D:\\Cursuri3\\.Net\\fake-news-detector\\FakeNewsDetector\\UnitTests\\UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\Cursuri3\\.Net\\fake-news-detector\\FakeNewsDetector\\UnitTests\\obj\\",
+      "projectPath": "E:\\Faculty3\\.NET\\fake-news-detector\\FakeNewsDetector\\UnitTests\\UnitTests.csproj",
+      "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
+      "outputPath": "E:\\Faculty3\\.NET\\fake-news-detector\\FakeNewsDetector\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5023,7 +5023,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

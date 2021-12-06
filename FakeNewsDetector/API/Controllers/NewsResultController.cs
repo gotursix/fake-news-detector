@@ -1,4 +1,5 @@
 ﻿using System;
+using EntityFramework;
 using EntityFramework.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -19,9 +20,12 @@ namespace API.Controllers
         
         [EnableCors]
         [HttpPost]
-        public NewsResult Post(URL url)
+        public NewsResult Post(string url)
         {
-            var result = new NewsResult(Guid.NewGuid(), url, Guid.NewGuid(), "Real", DateTime.Now);
+            var result = new NewsResult(){Id = Guid.NewGuid(), Decision = "Real",SearchDate = DateTime.Now, StatisticsId = Guid.NewGuid(),Link = url};
+            using var ctx = new AppDbContext();
+            ctx.ResultsHistory.Add(result);
+            ctx.SaveChanges();
             return result;
         }
     }
