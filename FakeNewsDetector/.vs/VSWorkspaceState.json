@@ -1,15 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\API",
-    "\\CodeFirstEF",
-    "\\Frontend\\Content",
-    "\\Frontend\\Views",
-    "\\Frontend\\Views\\Home",
-    "\\Frontend\\Views\\Shared",
-    "\\frontend_react",
-    "\\MachineLearningModels"
+    ""
   ],
-  "SelectedNode": "\\MachineLearningModels",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\FakeNewsDetector.sln",
+  "PreviewInSolutionExplorer": true
 }

@@ -10,7 +10,27 @@
       "ProjectGuid": "65a97d8c-e8bc-4cfe-af67-3f496a5c4736",
       "DisplayName": "Frontend",
       "ColorIndex": 0
+    },
+    "c6b9e99d-3018-4e0b-a9cc-2a1f7212ee65": {
+      "ProjectGuid": "c6b9e99d-3018-4e0b-a9cc-2a1f7212ee65",
+      "DisplayName": "CodeFirstEF",
+      "ColorIndex": 1
+    },
+    "ee305782-e924-455b-8946-80fe994ec804": {
+      "ProjectGuid": "ee305782-e924-455b-8946-80fe994ec804",
+      "DisplayName": "API",
+      "ColorIndex": 2
+    },
+    "e6fb62e7-7920-4620-b092-b9b0ed968340": {
+      "ProjectGuid": "e6fb62e7-7920-4620-b092-b9b0ed968340",
+      "DisplayName": "MachineLeaningAlgorithm",
+      "ColorIndex": 3
+    },
+    "13e4bb0a-b062-4002-9b87-1b4056f44081": {
+      "ProjectGuid": "13e4bb0a-b062-4002-9b87-1b4056f44081",
+      "DisplayName": "MLPrediction",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 5
 }
