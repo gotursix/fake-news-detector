@@ -1,0 +1,5 @@
+D:\Cursuri3\.Net\fake-news-detector\FakeNewsDetector\MachineLearningModels\TrainedModel\TrainedModel\obj\Debug\net5.0\TrainedModel.csproj.AssemblyReference.cache
+D:\Cursuri3\.Net\fake-news-detector\FakeNewsDetector\MachineLearningModels\TrainedModel\TrainedModel\obj\Debug\net5.0\TrainedModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursuri3\.Net\fake-news-detector\FakeNewsDetector\MachineLearningModels\TrainedModel\TrainedModel\obj\Debug\net5.0\TrainedModel.AssemblyInfoInputs.cache
+D:\Cursuri3\.Net\fake-news-detector\FakeNewsDetector\MachineLearningModels\TrainedModel\TrainedModel\obj\Debug\net5.0\TrainedModel.AssemblyInfo.cs
+D:\Cursuri3\.Net\fake-news-detector\FakeNewsDetector\MachineLearningModels\TrainedModel\TrainedModel\obj\Debug\net5.0\TrainedModel.csproj.CoreCompileInputs.cache

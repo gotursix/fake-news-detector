@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Frontend",
+    "\\API",
+    "\\CodeFirstEF",
     "\\Frontend\\Content",
     "\\Frontend\\Views",
     "\\Frontend\\Views\\Home",
-    "\\Frontend\\Views\\Shared"
+    "\\Frontend\\Views\\Shared",
+    "\\frontend_react",
+    "\\MachineLearningModels"
   ],
-  "SelectedNode": "\\Frontend\\Views\\Home\\About.cshtml",
+  "SelectedNode": "\\MachineLearningModels",
   "PreviewInSolutionExplorer": false
 }
