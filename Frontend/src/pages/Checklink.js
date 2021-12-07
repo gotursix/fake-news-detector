@@ -33,7 +33,7 @@ const Checklink = () => {
     else
         return (
             <div>
-                <Results formResultUrl={ResultsDB['link']['url']} formResultDecision={ResultsDB['decision']}/>
+                <Results formResultUrl={ResultsDB['link']} formResultDecision={ResultsDB['decision']}/>
             </div>
         )
 }
