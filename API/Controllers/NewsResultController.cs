@@ -20,9 +20,19 @@ namespace API.Controllers
         
         [EnableCors]
         [HttpPost]
-        public NewsResult Post(string url)
+        public NewsResult Post([FromBody] EntityFramework.Models.UrlModel url)
         {
-            var result = new NewsResult(){Id = Guid.NewGuid(), Decision = "Real",SearchDate = DateTime.Now, StatisticsId = Guid.NewGuid(),Link = url};
+            WebParser.Website webParser = new WebParser.InfoWarsParser(url.Url);
+            //Take the parsed data and use it on MLPrediction
+            MLPrediction.MLModel1.ModelInput sampleData = new MLPrediction.MLModel1.ModelInput()
+            {
+                Title = @webParser.Title,
+                Text = @webParser.Content,
+                Subject = @webParser.Subject,
+                Date = @webParser.Date.ToString(),
+            };
+            var predictionResult = MLPrediction.MLModel1.Predict(sampleData);
+            var result = new NewsResult(){Id = Guid.NewGuid(), Decision = predictionResult.Prediction, SearchDate = webParser.Date, StatisticsId = Guid.NewGuid(), Link = url.Url};
             using var ctx = new AppDbContext();
             ctx.ResultsHistory.Add(result);
             ctx.SaveChanges();

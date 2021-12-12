@@ -6,13 +6,14 @@ const Checklink = () => {
     const [ResultsDB, setResultsDB] = useState([])
 
     const handleSubmit = (e) => {
+        console.log(e.target[0].value)
         e.preventDefault();
-        fetch('https://localhost:5003/NewsResult', {
+        fetch('https://localhost:44335/NewsResult', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: `{
-                "url" : "${e.target[0].value}"
-            }`,
+            body: JSON.stringify({
+                "url" : e.target[0].value
+            }),
           })
           .then(response => response.json())
           .then(data => {

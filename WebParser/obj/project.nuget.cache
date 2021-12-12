@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QDFsfaIXvJWzdQRIpRZuTkziUAlyuCAisHwOJND7o4Pa5YKlKpZCD7QfkakQpvmzPPgVmQHKh/GYM3oH/N/gkQ==",
+  "success": true,
+  "projectFilePath": "D:\\Facultate\\.NET\\fake-news-detector\\WebParser\\WebParser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crist\\.nuget\\packages\\htmlagilitypack\\1.11.39\\htmlagilitypack.1.11.39.nupkg.sha512"
+  ],
+  "logs": []
+}

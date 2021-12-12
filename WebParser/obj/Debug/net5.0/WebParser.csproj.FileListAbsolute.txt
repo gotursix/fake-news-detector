@@ -1,0 +1,12 @@
+D:\Facultate\.NET\fake-news-detector\WebParser\bin\Debug\net5.0\WebParser.deps.json
+D:\Facultate\.NET\fake-news-detector\WebParser\bin\Debug\net5.0\WebParser.dll
+D:\Facultate\.NET\fake-news-detector\WebParser\bin\Debug\net5.0\ref\WebParser.dll
+D:\Facultate\.NET\fake-news-detector\WebParser\bin\Debug\net5.0\WebParser.pdb
+D:\Facultate\.NET\fake-news-detector\WebParser\obj\Debug\net5.0\WebParser.csproj.AssemblyReference.cache
+D:\Facultate\.NET\fake-news-detector\WebParser\obj\Debug\net5.0\WebParser.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\.NET\fake-news-detector\WebParser\obj\Debug\net5.0\WebParser.AssemblyInfoInputs.cache
+D:\Facultate\.NET\fake-news-detector\WebParser\obj\Debug\net5.0\WebParser.AssemblyInfo.cs
+D:\Facultate\.NET\fake-news-detector\WebParser\obj\Debug\net5.0\WebParser.csproj.CoreCompileInputs.cache
+D:\Facultate\.NET\fake-news-detector\WebParser\obj\Debug\net5.0\WebParser.dll
+D:\Facultate\.NET\fake-news-detector\WebParser\obj\Debug\net5.0\ref\WebParser.dll
+D:\Facultate\.NET\fake-news-detector\WebParser\obj\Debug\net5.0\WebParser.pdb
