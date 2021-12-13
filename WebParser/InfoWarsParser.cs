@@ -1,15 +1,12 @@
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WebParser
 {
     public class InfoWarsParser : Website
     {
-        private Dictionary<string, string> elementsClass = new Dictionary<string, string>()
+        private readonly Dictionary<string, string> _elementsClass = new Dictionary<string, string>()
         {
             { "Date", "//a[@class='css-ziaiw7']" },
             { "Content", "//div[@class='css-6lqlxw']" },
@@ -24,35 +21,35 @@ namespace WebParser
             ExtractSubject();
         }
 
-        protected override void ExtractContent()
+        protected sealed override void ExtractContent()
         {
-            HtmlNode node = HtmlDoc.DocumentNode.SelectSingleNode(elementsClass["Content"]);
-            foreach (HtmlNode pNode in node.SelectNodes("//p"))
+            var node = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Content"]);
+            foreach (var pNode in node.SelectNodes("//p"))
                 Content += HtmlEntity.DeEntitize(pNode.FirstChild.InnerText) + "\n";
         }
 
-        protected override void ExtractDate()
+        protected sealed override void ExtractDate()
         {
-            var numberFormat = new string[] { "th", "st", "nd", "rd"};
-            HtmlNode node = HtmlDoc.DocumentNode.SelectSingleNode(elementsClass["Date"]);
-            string dateStr = node.InnerText;
-            var comma = dateStr.IndexOf(",");
+            var numberFormat = new[] { "th", "st", "nd", "rd"};
+            var node = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Date"]);
+            var dateStr = node.InnerText;
+            var comma = dateStr.IndexOf(",", StringComparison.Ordinal);
             dateStr = dateStr.Substring(0, comma);
             foreach(var format in numberFormat)
                 if(dateStr.Contains(format))
-                    dateStr = dateStr.Remove(dateStr.IndexOf(format), 2);
+                    dateStr = dateStr.Remove(dateStr.IndexOf(format, StringComparison.Ordinal), 2);
             Date = DateTime.Parse(dateStr);
         }
 
-        protected override void ExtractSubject()
+        protected sealed override void ExtractSubject()
         {
-            HtmlNode node = HtmlDoc.DocumentNode.SelectSingleNode(elementsClass["Subject"]);
+            HtmlNode node = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Subject"]);
             Subject = node.InnerText;
         }
 
-        protected override void ExtractTitle()
+        protected sealed override void ExtractTitle()
         {
-            Title = HtmlDoc.DocumentNode.SelectSingleNode(elementsClass["Title"]).InnerText.ToString();
+            Title = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Title"]).InnerText;
         }
         
     }

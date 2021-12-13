@@ -9,13 +9,11 @@ namespace UnitTests
 { 
     public class ApiTests
     {
-        private readonly Random _gen = new Random();
-
         private DateTime RandomDay()
         {
             var start = new DateTime(1995, 1, 1);
             var range = (DateTime.Today - start).Days;
-            return start.AddDays(_gen.Next(range));
+            return start.AddDays(3);
         }
         [Test]
         public void GetAllProducts_ShouldReturnAllProducts()
