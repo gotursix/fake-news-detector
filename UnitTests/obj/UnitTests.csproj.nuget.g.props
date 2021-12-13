@@ -13,6 +13,7 @@
     <SourceRoot Include="C:\Users\Valentin\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)reportgenerator\5.0.0\build\netstandard2.0\ReportGenerator.props" Condition="Exists('$(NuGetPackageRoot)reportgenerator\5.0.0\build\netstandard2.0\ReportGenerator.props')" />
     <Import Project="$(NuGetPackageRoot)nunit3testadapter\3.17.0\build\netcoreapp2.1\NUnit3TestAdapter.props" Condition="Exists('$(NuGetPackageRoot)nunit3testadapter\3.17.0\build\netcoreapp2.1\NUnit3TestAdapter.props')" />
     <Import Project="$(NuGetPackageRoot)nunit\3.13.1\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.13.1\build\NUnit.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props')" />
@@ -20,6 +21,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgReportGenerator Condition=" '$(PkgReportGenerator)' == '' ">C:\Users\Valentin\.nuget\packages\reportgenerator\5.0.0</PkgReportGenerator>
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Valentin\.nuget\packages\newtonsoft.json\10.0.3</PkgNewtonsoft_Json>
   </PropertyGroup>
 </Project>
