@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SolutionRoot CoveredStatements="32" TotalStatements="292" CoveragePercent="11" ReportType="Xml" DotCoverVersion="2021.3">
+  <Project Name="API" CoveredStatements="0" TotalStatements="80" CoveragePercent="0">
+    <Namespace Name="API" CoveredStatements="0" TotalStatements="80" CoveragePercent="0">
+      <Namespace Name="Controllers" CoveredStatements="0" TotalStatements="35" CoveragePercent="0">
+        <Type Name="NewsResultController" CoveredStatements="0" TotalStatements="14" CoveragePercent="0">
+          <Constructor Name="NewsResultController(ILogger&lt;NewsResult&gt;)" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+          <Method Name="Post(UrlModel):NewsResult" CoveredStatements="0" TotalStatements="10" CoveragePercent="0" />
+        </Type>
+        <Type Name="ResultsHistoryController" CoveredStatements="0" TotalStatements="9" CoveragePercent="0">
+          <Constructor Name="ResultsHistoryController(ILogger&lt;NewsResult&gt;)" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+          <Method Name="Get():IEnumerable&lt;NewsResult&gt;" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+        </Type>
+        <Type Name="UsersController" CoveredStatements="0" TotalStatements="12" CoveragePercent="0">
+          <Constructor Name="UsersController(ILogger&lt;User&gt;)" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+          <Method Name="Get():IEnumerable&lt;User&gt;" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+          <Method Name="Post(string):ActionResult" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Type>
+      </Namespace>
+      <Type Name="Program" CoveredStatements="0" TotalStatements="7" CoveragePercent="0">
+        <Method Name="CreateHostBuilder(string[]):IHostBuilder" CoveredStatements="0" TotalStatements="4" CoveragePercent="0">
+          <OwnCoverage CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <AnonymousMethod Name="(IWebHostBuilder):void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Method>
+        <Method Name="Main(string[]):void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+      </Type>
+      <Type Name="Startup" CoveredStatements="0" TotalStatements="38" CoveragePercent="0">
+        <Constructor Name="Startup(IConfiguration)" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        <AutoProperty Name="Configuration:IConfiguration" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </AutoProperty>
+        <Method Name="Configure(IApplicationBuilder,IWebHostEnvironment):void" CoveredStatements="0" TotalStatements="18" CoveragePercent="0">
+          <OwnCoverage CoveredStatements="0" TotalStatements="14" CoveragePercent="0" />
+          <AnonymousMethod Name="(SwaggerUIOptions):void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <AnonymousMethod Name="(IEndpointRouteBuilder):void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Method>
+        <Method Name="ConfigureServices(IServiceCollection):void" CoveredStatements="0" TotalStatements="15" CoveragePercent="0">
+          <OwnCoverage CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+          <AnonymousMethod Name="(CorsOptions):void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+            <OwnCoverage CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+            <AnonymousMethod Name="(CorsPolicyBuilder):void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+          </AnonymousMethod>
+          <AnonymousMethod Name="(SwaggerGenOptions):void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Project>
+  <Project Name="CodeFirstEF" CoveredStatements="0" TotalStatements="101" CoveragePercent="0">
+    <Namespace Name="EntityFramework" CoveredStatements="0" TotalStatements="101" CoveragePercent="0">
+      <Namespace Name="Configurations" CoveredStatements="0" TotalStatements="12" CoveragePercent="0">
+        <Type Name="PostsConfigurations" CoveredStatements="0" TotalStatements="4" CoveragePercent="0">
+          <Constructor Name="PostsConfigurations()" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        </Type>
+        <Type Name="ResultsHistoryConfiguration" CoveredStatements="0" TotalStatements="4" CoveragePercent="0">
+          <Constructor Name="ResultsHistoryConfiguration()" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        </Type>
+        <Type Name="UsersConfigurations" CoveredStatements="0" TotalStatements="4" CoveragePercent="0">
+          <Constructor Name="UsersConfigurations()" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        </Type>
+      </Namespace>
+      <Namespace Name="Initializers" CoveredStatements="0" TotalStatements="33" CoveragePercent="0">
+        <Type Name="BlogDbInitializer" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+          <Method Name="Seed(AppDbContext):void" CoveredStatements="0" TotalStatements="10" CoveragePercent="0" />
+        </Type>
+        <Type Name="ResultsHistoryInitializer" CoveredStatements="0" TotalStatements="15" CoveragePercent="0">
+          <Constructor Name="ResultsHistoryInitializer()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <Method Name="RandomDay():DateTime" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+          <Method Name="Seed(AppDbContext):void" CoveredStatements="0" TotalStatements="9" CoveragePercent="0" />
+        </Type>
+        <Type Name="UsersDbInitializer" CoveredStatements="0" TotalStatements="8" CoveragePercent="0">
+          <Method Name="Seed(AppDbContext):void" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" />
+        </Type>
+      </Namespace>
+      <Namespace Name="Models" CoveredStatements="0" TotalStatements="22" CoveragePercent="0">
+        <Type Name="NewsResult" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+          <AutoProperty Name="Decision:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+          <AutoProperty Name="Id:Guid" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+          <AutoProperty Name="Link:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+          <AutoProperty Name="SearchDate:DateTime" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+          <AutoProperty Name="StatisticsId:Guid" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+        </Type>
+        <Type Name="Post" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+          <AutoProperty Name="Body:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+          <AutoProperty Name="Id:Guid" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+          <AutoProperty Name="Title:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+        </Type>
+        <Type Name="UrlModel" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <AutoProperty Name="Url:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+        </Type>
+        <Type Name="User" CoveredStatements="0" TotalStatements="4" CoveragePercent="0">
+          <AutoProperty Name="Id:Guid" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+          <AutoProperty Name="Username:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+        </Type>
+      </Namespace>
+      <Type Name="AppDbContext" CoveredStatements="0" TotalStatements="21" CoveragePercent="0">
+        <Constructor Name="AppDbContext()" CoveredStatements="0" TotalStatements="7" CoveragePercent="0" />
+        <AutoProperty Name="Posts:DbSet&lt;Post&gt;" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </AutoProperty>
+        <AutoProperty Name="ResultsHistory:DbSet&lt;NewsResult&gt;" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </AutoProperty>
+        <AutoProperty Name="Users:DbSet&lt;User&gt;" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </AutoProperty>
+        <Method Name="OnModelCreating(DbModelBuilder):void" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" />
+      </Type>
+      <Type Name="Program" CoveredStatements="0" TotalStatements="13" CoveragePercent="0">
+        <Method Name="Main():void" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" />
+      </Type>
+    </Namespace>
+  </Project>
+  <Project Name="MLPrediction" CoveredStatements="24" TotalStatements="40" CoveragePercent="60">
+    <Namespace Name="MLPrediction" CoveredStatements="24" TotalStatements="40" CoveragePercent="60">
+      <Type Name="MLModel1" CoveredStatements="24" TotalStatements="35" CoveragePercent="69">
+        <Type Name="ModelInput" CoveredStatements="8" TotalStatements="10" CoveragePercent="80">
+          <AutoProperty Name="Date:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AutoProperty>
+          <AutoProperty Name="Result:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+            <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AutoProperty>
+          <AutoProperty Name="Subject:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AutoProperty>
+          <AutoProperty Name="Text:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AutoProperty>
+          <AutoProperty Name="Title:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AutoProperty>
+        </Type>
+        <Type Name="ModelOutput" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <AutoProperty Name="Prediction:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AutoProperty>
+          <AutoProperty Name="Score:float[]" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AutoProperty>
+        </Type>
+        <Constructor Name="MLModel1()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="2" TotalStatements="2" CoveragePercent="100" />
+          <AnonymousMethod Name="():PredictionEngine&lt;ModelInput,ModelOutput&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Constructor>
+        <Method Name="BuildPipeline(MLContext):IEstimator&lt;ITransformer&gt;" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        <Method Name="CreatePredictEngine():PredictionEngine&lt;ModelInput,ModelOutput&gt;" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="Predict(ModelInput):ModelOutput" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="RetrainPipeline(MLContext,IDataView):ITransformer" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+      </Type>
+      <Type Name="Program" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">
+        <Method Name="Main(string[]):void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+      </Type>
+    </Namespace>
+  </Project>
+  <Project Name="UnitTests" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+    <Namespace Name="UnitTests" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+      <Type Name="DatabaseTests" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+        <Method Name="Send_Database_Query():void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="MLTests" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+        <Method Name="Send_Database_Query():void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+  </Project>
+  <Project Name="WebParser" CoveredStatements="0" TotalStatements="63" CoveragePercent="0">
+    <Namespace Name="WebParser" CoveredStatements="0" TotalStatements="63" CoveragePercent="0">
+      <Type Name="InfoWarsParser" CoveredStatements="0" TotalStatements="37" CoveragePercent="0">
+        <Constructor Name="InfoWarsParser(string)" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" />
+        <Method Name="ExtractContent():void" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" />
+        <Method Name="ExtractDate():void" CoveredStatements="0" TotalStatements="14" CoveragePercent="0" />
+        <Method Name="ExtractSubject():void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        <Method Name="ExtractTitle():void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+      </Type>
+      <Type Name="Program" CoveredStatements="0" TotalStatements="4" CoveragePercent="0">
+        <Method Name="Main(string[]):void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+      </Type>
+      <Type Name="Website" CoveredStatements="0" TotalStatements="22" CoveragePercent="0">
+        <Constructor Name="Website(string)" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+        <Property Name="Content:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="Date:DateTime" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="HtmlDoc:HtmlDocument" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="Link:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="Subject:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="Title:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Method Name="GetHTMLFromLink():HtmlDocument" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+      </Type>
+    </Namespace>
+  </Project>
+</SolutionRoot>
