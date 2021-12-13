@@ -7,8 +7,6 @@ namespace EntityFramework.Initializers
 {
     public class ResultsHistoryInitializer : DropCreateDatabaseAlways<AppDbContext>
     {
-        private readonly Random _gen = new Random();
-
         protected override void Seed(AppDbContext context)
         {
             IList<NewsResult> results = new List<NewsResult>();
@@ -20,11 +18,11 @@ namespace EntityFramework.Initializers
             base.Seed(context);
         }
 
-        private DateTime RandomDay()
+        private static DateTime RandomDay()
         {
             var start = new DateTime(1995, 1, 1);
             var range = (DateTime.Today - start).Days;
-            return start.AddDays(_gen.Next(range));
+            return start.AddDays(3);
         }
     }
 }
