@@ -47,7 +47,7 @@ jobs:
           dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
       -name: Upload tests
-        with:
+        run: |
           sonar.cs.vscoveragexml.reportsPaths=**/*.coveragexml
           sonar.cs.vstest.reportsPaths=**/*.trx
           sonar.debug=true
