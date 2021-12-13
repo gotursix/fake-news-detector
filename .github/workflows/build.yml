@@ -46,9 +46,3 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"gotursix_net-movie" /o:"gotursix" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
-      -name: Upload tests
-        run: |
-          sonar.cs.vscoveragexml.reportsPaths=**/*.coveragexml
-          sonar.cs.vstest.reportsPaths=**/*.trx
-          sonar.debug=true
-          sonar.verbose=true
