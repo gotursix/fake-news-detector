@@ -9,7 +9,7 @@ namespace UnitTests
 { 
     public class ApiTests
     {
-        private DateTime RandomDay()
+        private static DateTime RandomDay()
         {
             var start = new DateTime(1995, 1, 1);
             var range = (DateTime.Today - start).Days;

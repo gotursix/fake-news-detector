@@ -43,7 +43,7 @@ namespace WebParser
 
         protected sealed override void ExtractSubject()
         {
-            HtmlNode node = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Subject"]);
+            var node = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Subject"]);
             Subject = node.InnerText;
         }
 
