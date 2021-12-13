@@ -11,11 +11,9 @@ namespace API.Controllers
     [Route("[controller]")]
     public class NewsResultController : ControllerBase
     {
-        private readonly ILogger<NewsResult> _logger;
-
-        public NewsResultController(ILogger<NewsResult> logger)
+        public NewsResultController()
         {
-            _logger = logger;
+            
         }
         
         [EnableCors]

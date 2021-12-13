@@ -13,11 +13,9 @@ namespace API.Controllers
     [Route("[controller]")]
     public class UsersController : ControllerBase
     {
-        private readonly ILogger<User> _logger;
-
         public UsersController(ILogger<User> logger)
         {
-            _logger = logger;
+            
         }
 
         [EnableCors]

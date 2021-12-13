@@ -1,0 +1,12 @@
+E:\Faculty3\.NET\fake-news-detector\WebParser\bin\Release\net5.0\WebParser.deps.json
+E:\Faculty3\.NET\fake-news-detector\WebParser\bin\Release\net5.0\WebParser.dll
+E:\Faculty3\.NET\fake-news-detector\WebParser\bin\Release\net5.0\ref\WebParser.dll
+E:\Faculty3\.NET\fake-news-detector\WebParser\bin\Release\net5.0\WebParser.pdb
+E:\Faculty3\.NET\fake-news-detector\WebParser\obj\Release\net5.0\WebParser.csproj.AssemblyReference.cache
+E:\Faculty3\.NET\fake-news-detector\WebParser\obj\Release\net5.0\WebParser.GeneratedMSBuildEditorConfig.editorconfig
+E:\Faculty3\.NET\fake-news-detector\WebParser\obj\Release\net5.0\WebParser.AssemblyInfoInputs.cache
+E:\Faculty3\.NET\fake-news-detector\WebParser\obj\Release\net5.0\WebParser.AssemblyInfo.cs
+E:\Faculty3\.NET\fake-news-detector\WebParser\obj\Release\net5.0\WebParser.csproj.CoreCompileInputs.cache
+E:\Faculty3\.NET\fake-news-detector\WebParser\obj\Release\net5.0\WebParser.dll
+E:\Faculty3\.NET\fake-news-detector\WebParser\obj\Release\net5.0\ref\WebParser.dll
+E:\Faculty3\.NET\fake-news-detector\WebParser\obj\Release\net5.0\WebParser.pdb

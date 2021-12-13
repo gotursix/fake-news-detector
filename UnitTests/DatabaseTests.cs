@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using EntityFramework;
+using NUnit.Framework;
+using System.Linq;
 
 namespace UnitTests
 {

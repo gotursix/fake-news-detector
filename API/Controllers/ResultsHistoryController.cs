@@ -13,11 +13,10 @@ namespace API.Controllers
     [Route("[controller]")]
     public class ResultsHistoryController : ControllerBase
     {
-        private readonly ILogger<NewsResult> _logger;
-        
-        public ResultsHistoryController(ILogger<NewsResult> logger)
+
+        public ResultsHistoryController()
         {
-            _logger = logger;
+            
         }
 
         [EnableCors]
@@ -26,7 +25,7 @@ namespace API.Controllers
         {
             using var ctx = new AppDbContext();
             var query = from r in ctx.ResultsHistory
-                orderby r.Id
+                orderby r.SearchDate
                 select r;
             return query.ToList();
         }

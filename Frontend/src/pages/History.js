@@ -4,7 +4,7 @@ const History = () => {
     const [History, setHistory] = useState([])
 
     useEffect(() => {    
-        fetch('https://localhost:44335/ResultsHistory', {
+        fetch('https://localhost:5003/ResultsHistory', {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
           })

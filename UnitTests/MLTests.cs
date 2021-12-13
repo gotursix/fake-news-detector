@@ -1,10 +1,9 @@
-﻿using System;
-using MLPrediction;
+﻿using MLPrediction;
 using NUnit.Framework;
 
 namespace UnitTests
 {
-    public class MLTests
+    public class MlTests
     {
         [Test]
         public void Send_Database_Query()

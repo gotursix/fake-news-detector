@@ -8,7 +8,7 @@ const Checklink = () => {
     const handleSubmit = (e) => {
         console.log(e.target[0].value)
         e.preventDefault();
-        fetch('https://localhost:44335/NewsResult', {
+        fetch('https://localhost:5003/NewsResult', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

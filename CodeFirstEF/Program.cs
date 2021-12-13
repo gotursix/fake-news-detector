@@ -3,7 +3,7 @@ using EntityFramework.Models;
 
 namespace EntityFramework
 {
-    class Program
+    static class Program
     {
         static void Main()
         {
