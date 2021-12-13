@@ -21,7 +21,6 @@ namespace EntityFramework.Initializers
         private static DateTime RandomDay()
         {
             var start = new DateTime(1995, 1, 1);
-            var range = (DateTime.Today - start).Days;
             return start.AddDays(3);
         }
     }
