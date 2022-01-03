@@ -6,7 +6,7 @@ namespace WebParser
 {
     public class InfoWarsParser : Website
     {
-        private readonly Dictionary<string, string> _elementsClass = new Dictionary<string, string>()
+        private readonly Dictionary<string, string> _elementsClass = new()
         {
             { "Date", "//a[@class='css-ziaiw7']" },
             { "Content", "//div[@class='css-6lqlxw']" },

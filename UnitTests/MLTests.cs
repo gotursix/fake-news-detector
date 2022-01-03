@@ -6,7 +6,7 @@ namespace UnitTests
     public class MlTests
     {
         [Test]
-        public void Send_Database_Query()
+        public void Check_ML_Algorithm_When_True()
         {
             var sampleData = new MLModel1.ModelInput()
             {

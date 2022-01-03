@@ -18,6 +18,10 @@ namespace API.Controllers
             
         }
 
+        public UsersController()
+        {
+        }
+
         [EnableCors]
         [HttpGet]
         public IEnumerable<User> Get()

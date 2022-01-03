@@ -18,7 +18,7 @@ namespace API.Controllers
         
         [EnableCors]
         [HttpPost]
-        public NewsResult Post([FromBody] EntityFramework.Models.UrlModel url)
+        public NewsResult Post([FromBody] UrlModel url)
         {
             WebParser.Website webParser = new WebParser.InfoWarsParser(url.Url);
             //Take the parsed data and use it on MLPrediction
