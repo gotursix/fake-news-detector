@@ -34,7 +34,7 @@ namespace WebParser
             var node = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Date"]);
             var dateStr = node.InnerText;
             var comma = dateStr.IndexOf(",", StringComparison.Ordinal);
-            dateStr = dateStr.Substring(0, comma);
+            dateStr = dateStr[..comma];
             foreach(var format in numberFormat)
                 if(dateStr.Contains(format))
                     dateStr = dateStr.Remove(dateStr.IndexOf(format, StringComparison.Ordinal), 2);

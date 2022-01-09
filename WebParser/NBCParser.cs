@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace WebParser
 {
-    public class NBCParser : Website
+    public class NbcParser : Website
     {
         private readonly Dictionary<string, string> elementsClass = new Dictionary<string, string>()
         {
@@ -13,7 +13,7 @@ namespace WebParser
             { "Title", "//h1[@data-test='article-hero__headline']" },
             { "Subject", "//span[@data-test='unibrow-text']" }
         };
-        public NBCParser(string link) : base(link)
+        public NbcParser(string link) : base(link)
         {
             ExtractTitle();
             ExtractContent();

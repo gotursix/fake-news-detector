@@ -24,7 +24,7 @@ namespace API.Controllers
             if (url.Url.Contains("infowars"))
                 webParser = new WebParser.InfoWarsParser(url.Url);
             else if(url.Url.Contains("nbcnews"))
-                webParser = new WebParser.NBCParser(url.Url);
+                webParser = new WebParser.NbcParser(url.Url);
 
             if (webParser == null)
                 return null;
