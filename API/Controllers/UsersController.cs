@@ -36,9 +36,6 @@ namespace API.Controllers
         [HttpPost]
         public ActionResult Post(string url)
         {
-            // TODO: Finish function
-            //_usersList.Add(new User(Guid.NewGuid(), "lol", url));
-            //_usersList.Add(new User(Guid.NewGuid(), "lol"));
             return Ok();
         }
     }

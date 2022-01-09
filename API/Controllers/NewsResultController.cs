@@ -25,7 +25,7 @@ namespace API.Controllers
                 webParser = new WebParser.InfoWarsParser(url.Url);
             else if(url.Url.Contains("nbcnews"))
                 webParser = new WebParser.NBCParser(url.Url);
-            //Take the parsed data and use it on MLPrediction
+
             if (webParser == null)
                 return null;
             MLPrediction.MLModel1.ModelInput sampleData = new MLPrediction.MLModel1.ModelInput()

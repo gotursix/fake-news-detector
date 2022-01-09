@@ -29,9 +29,6 @@ namespace EntityFramework
                 .ToTable("Users");
             modelBuilder.Entity<NewsResult>()
                 .ToTable("ResultsHistory");
-
-            /*modelBuilder.Entity<Teacher>()
-                .MapToStoredProcedures();*/
         }
         
         public DbSet<Post> Posts { get; set; }
