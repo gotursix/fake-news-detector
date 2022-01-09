@@ -36,10 +36,6 @@ namespace WebParser
         protected sealed override void ExtractTitle()
         {
             Title = HtmlDoc.DocumentNode.SelectSingleNode(elementsClass["Title"]).InnerText.ToString();
-<<<<<<< HEAD
-            Console.WriteLine(Title);
-=======
->>>>>>> a18f2297feb02659a9f1915ce0f2855ee6bebb99
         }
         protected sealed override void ExtractDate()
         {

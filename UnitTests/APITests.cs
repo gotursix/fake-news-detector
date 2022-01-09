@@ -35,6 +35,14 @@ namespace UnitTests
         }
         
         [Test]
+        public void Get_Result_For_User_Post()
+        {
+            var controller = new UsersController();
+            var decision = controller.Post("https://www.infowars.com/posts/video-biden-self-owns-on-inflation-when-explaining-rising-meat-prices/");
+            Assert.AreEqual(typeof(Microsoft.AspNetCore.Mvc.OkResult), decision.GetType());
+        }
+        
+        [Test]
         public void Get_All_Users()
         {
             IEnumerable<User> users = new List<User>();

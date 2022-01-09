@@ -2,11 +2,36 @@
 	<s:Int64 x:Key="/Default/Environment/Hierarchy/Build/BuildTool/MsbuildVersion/@EntryValue">1048576</s:Int64>
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">C:\Program Files\JetBrains\JetBrains Rider 2021.2.1\tools\MSBuild\Current\Bin\MSBuild.exe</s:String>
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Valentin\AppData\Local\JetBrains\Rider2021.3\resharper-host\temp\Rider\vAny\CoverageData\_FakeNewsDetector.-383905739\Snapshot\snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3397550f_002D29f9_002D465b_002Db4ac_002Dcee162cb2f12/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAllProducts_ShouldReturnAllProducts" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0b0aa425_002D8ddf_002D483c_002D9276_002D43064b4edc46/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllNewsResult_ShouldReturnAllNewsResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.ApiTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3397550f_002D29f9_002D465b_002Db4ac_002Dcee162cb2f12/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllProducts_ShouldReturnAllProducts" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="E:\Faculty3\.NET\fake-news-detector\UnitTests" Presentation="&amp;lt;UnitTests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3399b0ce_002D0b4d_002D46f0_002Da1ac_002D2d892b2a1eaf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ApiTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.ApiTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4479da3c_002D95aa_002D43af_002D8e3b_002D7af454c99ee0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebParserTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.WebParserTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.MlTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.DatabaseTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.ApiTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.WebParserNBCTests.Check_Content_From_Parser_For_Subject&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.WebParserNbcTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=77c407d5_002D505d_002D4b19_002D82be_002D9833b2ffb72c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Send_Database_Query #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8ad5f96d_002Df809_002D4499_002Db7fc_002Db13bd54a5b04/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebParserTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A811BBAD-88A3-4B54-AF2C-0B559B7ADC6C::net5.0::UnitTests.WebParserTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd746695_002D6e66_002D4d26_002Db57b_002D82730165540f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Send_Database_Query" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="E:\Faculty3\.NET\fake-news-detector\UnitTests" Presentation="&amp;lt;UnitTests&amp;gt;" /&gt;&#xD;
