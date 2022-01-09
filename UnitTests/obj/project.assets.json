@@ -6795,19 +6795,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Valentin\\.nuget\\packages\\": {}
+    "C:\\Users\\crist\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Faculty3\\.NET\\fake-news-detector\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "D:\\Facultate\\.NET\\fake-news-detector\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "E:\\Faculty3\\.NET\\fake-news-detector\\UnitTests\\UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
-      "outputPath": "E:\\Faculty3\\.NET\\fake-news-detector\\UnitTests\\obj\\",
+      "projectPath": "D:\\Facultate\\.NET\\fake-news-detector\\UnitTests\\UnitTests.csproj",
+      "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate\\.NET\\fake-news-detector\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6821,14 +6821,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\Faculty3\\.NET\\fake-news-detector\\API\\API.csproj": {
-              "projectPath": "E:\\Faculty3\\.NET\\fake-news-detector\\API\\API.csproj"
+            "D:\\Facultate\\.NET\\fake-news-detector\\API\\API.csproj": {
+              "projectPath": "D:\\Facultate\\.NET\\fake-news-detector\\API\\API.csproj"
             },
-            "E:\\Faculty3\\.NET\\fake-news-detector\\CodeFirstEF\\CodeFirstEF.csproj": {
-              "projectPath": "E:\\Faculty3\\.NET\\fake-news-detector\\CodeFirstEF\\CodeFirstEF.csproj"
+            "D:\\Facultate\\.NET\\fake-news-detector\\CodeFirstEF\\CodeFirstEF.csproj": {
+              "projectPath": "D:\\Facultate\\.NET\\fake-news-detector\\CodeFirstEF\\CodeFirstEF.csproj"
             },
-            "E:\\Faculty3\\.NET\\fake-news-detector\\MLPrediction\\MLPrediction.csproj": {
-              "projectPath": "E:\\Faculty3\\.NET\\fake-news-detector\\MLPrediction\\MLPrediction.csproj"
+            "D:\\Facultate\\.NET\\fake-news-detector\\MLPrediction\\MLPrediction.csproj": {
+              "projectPath": "D:\\Facultate\\.NET\\fake-news-detector\\MLPrediction\\MLPrediction.csproj"
             }
           }
         }
@@ -6875,14 +6875,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   },

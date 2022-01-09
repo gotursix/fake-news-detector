@@ -20,8 +20,14 @@ namespace API.Controllers
         [HttpPost]
         public NewsResult Post([FromBody] UrlModel url)
         {
-            WebParser.Website webParser = new WebParser.InfoWarsParser(url.Url);
-            //Take the parsed data and use it on MLPrediction
+            WebParser.Website webParser = null;
+            if (url.Url.Contains("infowars"))
+                webParser = new WebParser.InfoWarsParser(url.Url);
+            else if(url.Url.Contains("nbcnews"))
+                webParser = new WebParser.NBCParser(url.Url);
+
+            if (webParser == null)
+                return null;
             MLPrediction.MLModel1.ModelInput sampleData = new MLPrediction.MLModel1.ModelInput()
             {
                 Title = @webParser.Title,
