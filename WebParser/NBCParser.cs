@@ -1,6 +1,7 @@
 using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace WebParser
 {
@@ -23,8 +24,13 @@ namespace WebParser
         protected sealed override void ExtractContent()
         {
             var node = HtmlDoc.DocumentNode.SelectSingleNode(elementsClass["Content"]);
+            StringBuilder sb = new StringBuilder();
             foreach (var pNode in node.SelectNodes("//p"))
-                Content += HtmlEntity.DeEntitize(pNode.InnerText) + "\n";
+            {
+                sb.Append(HtmlEntity.DeEntitize(pNode.InnerText));
+                sb.Append("\n");
+            }
+            Content = sb.ToString();
         }
 
         protected override void ExtractSubject()

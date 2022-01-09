@@ -1,6 +1,8 @@
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace WebParser
 {
@@ -24,18 +26,23 @@ namespace WebParser
         protected sealed override void ExtractContent()
         {
             var node = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Content"]);
+            StringBuilder sb = new StringBuilder();
             foreach (var pNode in node.SelectNodes("//p"))
-                Content += HtmlEntity.DeEntitize(pNode.FirstChild.InnerText) + "\n";
+            {
+                sb.Append(HtmlEntity.DeEntitize(pNode.InnerText));
+                sb.Append("\n");
+            }
+            Content = sb.ToString();
         }
 
         protected sealed override void ExtractDate()
         {
-            var numberFormat = new[] { "th", "st", "nd", "rd"};
+            var numberFormat = new List<String> { "th", "st", "nd", "rd"};
             var node = HtmlDoc.DocumentNode.SelectSingleNode(_elementsClass["Date"]);
             var dateStr = node.InnerText;
             var comma = dateStr.IndexOf(",", StringComparison.Ordinal);
             dateStr = dateStr[..comma];
-            foreach(var format in numberFormat)
+            foreach(var format in numberFormat.Where(nrFormat => dateStr.Contains(nrFormat)))
                 if(dateStr.Contains(format))
                     dateStr = dateStr.Remove(dateStr.IndexOf(format, StringComparison.Ordinal), 2);
             Date = DateTime.Parse(dateStr);

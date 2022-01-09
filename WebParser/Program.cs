@@ -6,7 +6,7 @@ namespace WebParser
     {
         static void Main(string[] args)
         {
-            Website web = new InfoWarsParser("https://www.infowars.com/posts/tucker-carlson-inflation-much-worse-than-what-economically-illiterate-leaders-are-saying/");
+            Website web = new InfoWarsParser("https://www.infowars.com/posts/damage-control-reuters-ap-proclaim-no-evidence-of-mass-formation-psychosis/");
             Console.WriteLine(web.Content);
         }
     }
