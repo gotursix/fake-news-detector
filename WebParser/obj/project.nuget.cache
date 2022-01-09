@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yqaMsem/9nhKcj6zwe9nyq03DMohrbImwPYUVVt/dLuVgezIUuR4bha6WUylKeKKeVUiK+qFx9ZcgRNz9SrznQ==",
+  "dgSpecHash": "QDFsfaIXvJWzdQRIpRZuTkziUAlyuCAisHwOJND7o4Pa5YKlKpZCD7QfkakQpvmzPPgVmQHKh/GYM3oH/N/gkQ==",
   "success": true,
-  "projectFilePath": "E:\\Faculty3\\.NET\\fake-news-detector\\WebParser\\WebParser.csproj",
+  "projectFilePath": "D:\\Facultate\\.NET\\fake-news-detector\\WebParser\\WebParser.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Valentin\\.nuget\\packages\\htmlagilitypack\\1.11.39\\htmlagilitypack.1.11.39.nupkg.sha512"
+    "C:\\Users\\crist\\.nuget\\packages\\htmlagilitypack\\1.11.39\\htmlagilitypack.1.11.39.nupkg.sha512"
   ],
   "logs": []
 }
