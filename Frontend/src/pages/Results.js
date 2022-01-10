@@ -13,7 +13,7 @@ const Results = (props) => {
                     <tbody>
                         <tr>
                             <td>{props.formResultUrl}</td>
-                            <td>{props.formResultDecision}</td>
+                            <td id="result">{props.formResultDecision}</td>
                         </tr>
                     </tbody>
                 </table>
