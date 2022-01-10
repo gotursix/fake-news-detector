@@ -1,19 +1,18 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-const Home = () => {
-    return (
-        <div>
-            <div class="home_page">
-                <img class="image" src={require('../Assets/fake.jpg')}></img>
-                <p>Nowadays, distinguishing between real and fake news has become a challenging task. But it can be achieved using machine learning concepts and algorithms. Fake news detection is one of the most interesting and easy machine learning project ideas well suited for beginners.</p>
-                </div>
-            <div class="team">
-                <p>
-                    The project was realised by Vina Andreea as Madalina, Bujor Bogdan as Constantin, Bucataru Cristian as Stefan and Grigorean Valentin as Valentin.
-                </p>
-            </div>
-        </div>
-    )
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-export default Home
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
