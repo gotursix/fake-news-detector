@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.home_page {
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 150px;
+  display: flex;
+}
+.image{
+  height : 100%
+}
+.home_page > p {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.team{
+  text-align: center;
+}
