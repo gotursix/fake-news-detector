@@ -50,7 +50,9 @@
 }
 
 .Results{
-  padding: 300px;
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .index{
@@ -94,4 +96,16 @@
 }
 .footer img{
   height: 80%;
+}
+@media screen and (max-width: 650px){
+  .footer img{
+    height: 30%;
+  }
+  .footer a{
+    font-size: small;
+  }
+  .Results{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

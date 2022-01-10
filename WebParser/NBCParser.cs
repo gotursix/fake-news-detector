@@ -45,12 +45,8 @@ namespace WebParser
         }
         protected sealed override void ExtractDate()
         {
-            var dateStr = "DECEMBER 30, 2021 6:00 PM";
-            var comma = dateStr.IndexOf(",", StringComparison.Ordinal);
-            var date = dateStr.Substring(0, comma);
-            string year = dateStr[(comma + 2)..].Split(' ')[0];
-            date += ' ' + year;
-            Date = DateTime.Parse(date);
+            var node = HtmlDoc.DocumentNode.SelectSingleNode(elementsClass["Date"]);
+            Date = DateTime.Parse(node.Attributes["content"].Value);
         }
     }
 }

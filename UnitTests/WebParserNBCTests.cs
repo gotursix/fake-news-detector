@@ -24,7 +24,7 @@ namespace UnitTests
         public void Check_Content_From_Parser_For_Date()
         {
             Website webParser = new NbcParser("https://www.nbcnews.com/science/science-news/covid-rampant-deer-research-shows-rcna10181");
-            Assert.AreEqual("12/30/2021 00:00:00", webParser.Date.ToString(CultureInfo.InvariantCulture));
+            Assert.AreEqual("01/03/2022 15:53:09", webParser.Date.ToUniversalTime().ToString(CultureInfo.InvariantCulture));
         }
         
         [Test]
