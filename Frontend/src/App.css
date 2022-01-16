@@ -64,7 +64,7 @@
 
 .footer{
   --default-height: 150px;
-  position: absolute;
+  position: fixed;
   top: calc(100% - var(--default-height));
   display: flex;
   justify-content: space-around;
